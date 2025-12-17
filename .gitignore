@@ -1,0 +1,32 @@
+# --- Secrets (CRITICAL) ---
+.env
+
+# --- User Specific Exclusions (Your list) ---
+data/
+chunks_out/
+input_pdfs/
+check_models.py
+images.jpeg
+
+# --- Database Files (Safety net) ---
+# I saw .db files in your screenshots. Even though we are ignoring
+# the 'data' folder, it is safer to ignore these globally.
+*.db
+*.db-shm
+*.db-wal
+
+# --- Python & System Junk (Standard) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.DS_Store
+
+# --- Editor Settings ---
+.vscode/
+
+# --- Miscellaneous ---
+# I see a file named 'requirements' without an extension again.
+# If this is a duplicate or mistake, we ignore it.
+requirements
