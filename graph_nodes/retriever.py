@@ -238,7 +238,7 @@ def get_resources():
 
     if _index is None:
         _pc = Pinecone(api_key=PINECONE_API_KEY)
-        _index = _pc.Index(INDEX_NAME)
+        _index = _pc.Index(name=INDEX_NAME)
         logger.info("Pinecone connected")
 
     if _co is None:
