@@ -4,7 +4,7 @@ import logging
 from typing import Optional, Literal
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import SystemMessage, HumanMessage
-from pydantic import BaseModel, Field
+from xxx import BaseModel, Field
 
 from graph_nodes.state import AgentState
 from bot_tools.schemas import (
