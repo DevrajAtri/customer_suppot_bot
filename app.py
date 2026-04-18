@@ -5,6 +5,9 @@ from PIL import Image
 from dotenv import load_dotenv
 from langchain_core.messages import HumanMessage, AIMessage
 from core.db_utils import get_db_conn
+from core.setup_db import init_db
+
+init_db()
 # Load environment variables (API Keys)
 load_dotenv()
 

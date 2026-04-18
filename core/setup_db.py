@@ -88,6 +88,9 @@ CREATE INDEX IF NOT EXISTS idx_handoffs_conversation_id ON handoffs (conversatio
 
 def init_db():
     # Ensure the folder exists
+    if DB_PATH.exists():
+        return  # DB already exists → skip
+
     if not os.path.exists(DB_FOLDER):
         os.makedirs(DB_FOLDER)
 
