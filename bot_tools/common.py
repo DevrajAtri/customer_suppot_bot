@@ -1,5 +1,5 @@
 from typing import Callable, Dict, Any, Optional, Type
-from xxx import BaseModel
+from pydantic import BaseModel
 import logging
 import time
 import functools

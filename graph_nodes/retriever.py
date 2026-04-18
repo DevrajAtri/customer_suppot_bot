@@ -205,7 +205,7 @@ logger = logging.getLogger(__name__)
 
 # --- CONFIG ---
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-GEMINI_API_KEY   = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY   = os.getenv("GOOGLE_API_KEY")
 COHERE_API_KEY   = os.getenv("COHERE_API_KEY")
 
 INDEX_NAME = "ecom-bot"
